@@ -1,0 +1,32 @@
+https://github.com/vishalh016/golfScoreMiniGame.git
+
+
+console.log("Hello from JavaScript");
+
+var n=["Hole-in-one","Eagle","Birdie","Par","Bogey","Double Bogey","Go Home"];
+
+function golfScore(p, s){
+    if(s==1){
+        return n[0];
+    }
+    else if(s<=p-2){
+        return n[1];
+    }
+    else if(s=p-1){
+        return n[2];
+    }
+    else if(s==p){
+        return n[3];
+    }
+    else if(s=p+1){
+        return n[4];
+    }
+    else if(s=p+2){
+        return n[5];
+    }
+    else if(s>=p+3){
+        return n[6];
+    }
+}
+
+console.log(golfScore(5,2));//Eagle
